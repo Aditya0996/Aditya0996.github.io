@@ -1,0 +1,108 @@
+/* Custom styles will go here */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #343a40; /* Dark text color */
+}
+/* Navbar styles */
+.navbar {
+    background-color: #343a40 !important; /* Primary color for navbar */
+}
+
+.navbar-toggler-icon {
+    color: #000; /* White color for the navbar toggler icon */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Black color for navbar links */
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Button styles */
+.btn-primary {
+    background-color: #007bff; /* Primary color for buttons */
+    border-color: #007bff; /* Border color for buttons */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+    border-color: #0056b3; /* Darker shade of border color on hover */
+}
+.profile-img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: top; /* Centers the image within the container */
+    border-radius: 50%; 
+    border: 4px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand img {
+    height: 40px; 
+    width: auto;
+}
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.card-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #0056b3;
+}
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+    pointer-events: none;  /* Disable pointer events */
+}
+
+.project-card:hover .card-overlay {
+    opacity: 1;
+    pointer-events: auto;  /* Enable pointer events on hover */
+}
+

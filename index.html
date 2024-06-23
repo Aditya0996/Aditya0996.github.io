@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Somani - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">  <!-- Custom styles -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Aditya Somani"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center" style="padding: 100px 0; background-color: #f8f9fa;">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4">Hello, I'm Aditya Somani</h1>
+            <p class="lead">I'm a Computer Science professional. Welcome to my portfolio!</p>
+            <a href="#portfolio" class="btn btn-primary btn-lg">View My Work</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" style="padding: 60px 0; background-color: #ffffff;">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <img src="images/profile.jpg" alt="Aditya Somani" class="img-fluid profile-img">
+                </div>
+                <div class="col-lg-8">
+                    <h2>About Me</h2>
+                    <p>I'm currently pursuing a Master of Science in Computer Science at The George Washington University. I have a strong background in software development and data science, with experience in various projects ranging from AI-enhanced applications to full-stack web development.</p>
+                    <p>I previously worked at Accenture Solutions Private Limited, where I held various roles, most recently as an Application Development Senior Analyst. My work included creating scalable system architectures, integrating AI-driven features, and performing system upgrades for enhanced efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section" style="padding: 60px 0; background-color: #f8f9fa;">
+        <div class="container" data-aos="flip-left">
+            <h2 class="text-center">Skills</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-code fa-3x"></i>
+                    <h3>Programming Languages</h3>
+                    <p>Java, C#, Python, Elixir, JavaScript, HTML 5, CSS</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-database fa-3x"></i>
+                    <h3>Platforms and Frameworks</h3>
+                    <p>Visual Studio .NET, Eclipse, GitHub, MS SharePoint, MongoDB, AWS, MS Power Automate</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-laptop fa-3x"></i>
+                    <h3>Algorithms & Libraries</h3>
+                    <p>TensorFlow, Keras, Spark, PyTorch, Flask, Pandas, NumPy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section" style="padding: 60px 0; background-color: #ffffff;">
+        <div class="container" data-aos="slide-up">
+            <h2 class="text-center">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <img src="images/project1.jpg" class="card-img-top" alt="GAN based Anomaly detection">
+                        <div class="card-body">
+                            <h5 class="card-title">GAN based Anomaly detection</h5>
+                            <p class="card-text">Implemented a GAN model for anomaly detection in aircraft telemetry data using TensorFlow, achieving a 17% higher AUC score than state-of-the-art methods.</p>
+                            <a href="https://github.com/Aditya0996" class="btn btn-primary card-link">View Project</a>
+                        </div>
+                        <div class="card-overlay">
+                            <h5>Technologies Used</h5>
+                            <p>Python, TensorFlow, GANs, Data Analysis</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects here following the same structure -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section
+    <section id="contact" class="contact-section" style="padding: 60px 0; background-color: #f8f9fa;">
+        <div class="container" data-aos="fade-left">
+            <h2 class="text-center">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer-section text-center" style="padding: 20px 0; background-color: #6c757d; color: #ffffff;">
+        <div class="container">
+            <p>&copy; 2024 Aditya Somani. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/adityasomani1/" target="_blank"><i class="fab fa-linkedin fa-2x" style="color: #ffffff; margin: 0 10px;"></i></a>
+                <a href="https://github.com/Aditya0996" target="_blank"><i class="fab fa-github fa-2x" style="color: #ffffff; margin: 0 10px;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
